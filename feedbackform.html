@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Feedback | Warframe 101</title>
+		<meta name="description" content="Submit feedback or suggestions for the Warframe 101 guide. Share your experience and help improve the site.">
+		<meta name="keywords" content="Warframe feedback, website feedback form, Warframe guide suggestions">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="warframe101.css">
+	</head>
+	<body>
+		<header>
+			<img src="logo.png" alt="Warframe logo" class="logo">
+			<h1><a href="index.html">Warframe 101</a></h1>
+		</header>
+		<div id="wrapper">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="corebasics.html">Core Basics</a></li>
+					<li><a href="gamemechanics.html">Game Mechanics</a></li>
+					<li><a href="tips&progression.html">Tips & Progression</a></li>
+					<li><a href="resources.html">Resources</a></li>
+				</ul>
+			</nav>
+			<main>
+				<h2>Feedback</h2>
+				<p>
+					Have suggestions or feedback about this guide? Share your thoughts below.
+				</p>
+				<form action="#" method="post">
+					<label for="name">Name (optional):</label>
+					<input type="text" id="name" name="name">
+					<label for="experience">Experience Level:</label>
+					<select id="experience" name="experience">
+						<option value="new">New Player</option>
+						<option value="returning">Returning Player</option>
+						<option value="experienced">Experienced Player</option>
+					</select>
+					<label for="feedback-type">Type of Feedback:</label>
+					<select id="feedback-type" name="feedback-type">
+						<option value="general">General Feedback</option>
+						<option value="content">Content Suggestion</option>
+						<option value="correction">Correction</option>
+						<option value="other">Other</option>
+					</select>
+					<label for="message">Your Feedback:</label>
+					<textarea id="message" name="message" rows="5" required></textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</main>
+			<footer>
+				<p><a href="mailto:email@fake.com">email@fake.com</a></p>
+			</footer>
+		</div>
+	</body>
+</html>
