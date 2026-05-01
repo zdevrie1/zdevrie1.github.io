@@ -16,6 +16,9 @@ header {
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
 }
 h1 {
 	margin-bottom: 0;
@@ -96,8 +99,36 @@ form {
 	flex-direction: column;
 	flex-wrap: nowrap;
 }
+label {
+	color: #f0ead6;
+	margin-top: 0.5em;
+}
+select {
+	color: #f0ead6;
+	background-color: #666666;
+	margin-top: 0.5em;
+}
 input, textarea {
+	color: #f0ead6;
 	margin-bottom: 0.5em;
+	background-color: #666666;
+	font-family: "Times New Roman", serif;
+}
+input[type="submit"] {
+	margin-top: 1em;
+	padding: 0.5em;
+	background-color: #666666;
+	border: none;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background-color: #ffc200;
+	color: #121212;
+}
+input:focus, textarea:focus, select:focus {
+	outline: none;
+	border: 2px solid #ffc200;
+	background-color: #666666;
 }
 
 /*footer styles. bottom of every page*/
@@ -124,13 +155,12 @@ footer p {margin: 3px;}
 	max-width: 100%;
 	border-radius: 8px;
 }
+.row video {
+	max-width: 100%;
+	border-radius: 8px;
+}
 .text {flex: 1;}
 .image {flex: 1;}
-.imagestack {
-	display: flex;
-	gap: 10px;
-}
-.imagestack img {width: 50%;}
 
 #wrapper {
 	background-color: #444444;
